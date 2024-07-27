@@ -5,9 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import java.util.Scanner;
 
-public class Emissor {
-
-  private final static String QUEUE_NAME = "minha-fila";
+public class EmissorE1 {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
@@ -18,9 +16,6 @@ public class Emissor {
     factory.setVirtualHost("/");    
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
-
-                      //(queue-name, durable, exclusive, auto-delete, params); 
-    channel.queueDeclare(QUEUE_NAME, false,   false,     false,       null);
     
     String message;
     
@@ -30,7 +25,7 @@ public class Emissor {
         break;
       }
                           //  (exchange, routingKey, props, message-body             ); 
-      channel.basicPublish("",       QUEUE_NAME, null,  message.getBytes("UTF-8"));
+      channel.basicPublish("E1", "", null,  message.getBytes("UTF-8"));
       System.out.println(" [x] Mensagem enviada: '" + message + "'");
     }
 

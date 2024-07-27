@@ -1,3 +1,8 @@
+br/ufs/dcomp/ExemploRabbitMQ/EmissorE2B.class
+br/ufs/dcomp/ExemploRabbitMQ/EmissorE1.class
 br/ufs/dcomp/ExemploRabbitMQ/Emissor.class
-br/ufs/dcomp/ExemploRabbitMQ/Receptor.class
+br/ufs/dcomp/ExemploRabbitMQ/Exchanges.class
+br/ufs/dcomp/ExemploRabbitMQ/Queues.class
 br/ufs/dcomp/ExemploRabbitMQ/Receptor$1.class
+br/ufs/dcomp/ExemploRabbitMQ/Receptor.class
+br/ufs/dcomp/ExemploRabbitMQ/EmissorE2A.class
